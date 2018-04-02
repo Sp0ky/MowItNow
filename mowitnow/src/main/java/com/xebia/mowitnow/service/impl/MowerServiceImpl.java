@@ -55,7 +55,7 @@ public class MowerServiceImpl implements MowerService {
 	                }
 	            }
 	            catch(Exception e) {
-	                logger.warn("Mower can't move from the instruction => {} ", instruction.getCode(), e);
+	                logger.warn("Error while executing instruction => {} ", instruction.getCode(), e);
 	            }
 	        }
 	    }
